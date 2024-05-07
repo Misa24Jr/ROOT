@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>despachador</display-name>
+	<display-name>chat</display-name>
+	<servlet>
+		<display-name>Despachador</display-name>
+		<servlet-name>Despachador</servlet-name>
+		<servlet-class>despachador.Despachador</servlet-class>
+		<init-param>
+			<param-name>directory</param-name>
+			<param-value>/home/pi/apache-tomcat-9.0.30/conf_insiemp/</param-value>
+			<!--param-value>C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\conf_colegio\\</param-value-->
+		</init-param>
+	</servlet>
+	<servlet>
+		<display-name>Chat</display-name>
+		<servlet-name>Chat</servlet-name>
+		<servlet-class>despachador.Chat</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Despachador</servlet-name>
+		<url-pattern>/despachador</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Chat</servlet-name>
+		<url-pattern>/chat</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	<error-page>
+		<error-code>400</error-code>
+		<location>/error.html</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/error.html</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.html</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.html</location>
+	</error-page>
+	<error-page>
+		<error-code>501</error-code>
+		<location>/error.html</location>
+	</error-page>
+	<error-page>
+		<error-code>503</error-code>
+		<location>/error.html</location>
+	</error-page>
+	<error-page>
+		<error-code>550</error-code>
+		<location>/error.html</location>
+	</error-page>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>securedapp</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+			<!-- <transport-guarantee>NONE</transport-guarantee> <transport-guarantee>CONFIDENTIAL</transport-guarantee> -->
+			<transport-guarantee>NONE</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+</web-app>

@@ -1,0 +1,74 @@
+/******************************************* AMBIENTE 1 *******************************************/
+.selectsCss1{
+    background-color : rgba(0,0,0,0);
+    border-color:rgba(100,100,100,0.7);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+    border-radius: 0;
+    outline:none;
+    color:black;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.selectsCss1 option {
+    font-family: verdana; /*arial, helvetica, sans-serif;*/
+    font-size: 11px;
+    background-color: white;
+    color:black;
+    font-weight: bold;
+}
+
+.selectsCss1:hover{
+    border-color:darkblue;
+    cursor:pointer;
+}
+
+.selectsCaptionCss1{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 12px;
+    color:black;    
+    
+    
+}
+/**************************************AMBIENTE 2 *************************************************/
+.selectsCss2{
+    background-color : rgba(0,0,0,0);
+    border-color:rgba(100,100,100,0.7);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+    border-radius: 0;
+    outline:none;
+    color:black;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.selectsCss2 option {
+    font-family: verdana; /*arial, helvetica, sans-serif;*/
+    font-size: 11px;
+    background-color: white;
+    color:black;
+    font-weight: bold;
+}
+
+.selectsCss2:hover{
+    border-color:#89001B;
+    cursor:pointer;
+}
+
+.selectsCaptionCss2{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 12px;
+    color:black;    
+    
+    
+}

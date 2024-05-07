@@ -1,0 +1,69 @@
+{
+  "id": "navBar",
+  "imgSrc": "images_portal/insiemp.png",
+  "contactInfo":
+    {
+    "email": "correo@mail.com",
+    "phone": "+581234567",
+    "facebook": "#",
+    "instagram": "#"
+    },
+  "options": [
+    {
+      "id": "principal",
+      "title": "principal",
+      "typeIcon": "house",
+      "link": "#"
+    },
+    {
+      "id": "laInstitucion",
+      "title": "la institucion",
+      "typeIcon": "graduationCap",
+      "link": "#"
+    }, 
+    {
+      "id": "instalaciones",
+      "title": "instalaciones",
+      "typeIcon": "bank",
+      "link": "#"
+    }, 
+    {
+      "id": "contactos",
+      "title": "contactos",
+      "typeIcon": "call",
+      "link": "#"
+    },
+    {
+      "id": "noticias",
+      "title": "noticias",
+      "typeIcon": "info",
+      "link": "#"
+    },
+    {
+      "id": "eventos",
+      "title": "eventos",
+      "typeIcon": "calendar",
+      "link": "#"
+    },
+    {
+      "id": "ingresar",
+      "title": "ingresar",
+      "typeIcon": "user2",
+      "link": "#",
+      "options": [
+        {
+          "id": "educa",
+          "title": "educ@",
+          "typeIcon": "userCard",
+          "link": "#"
+        },
+        {
+          "id": "virtualClassRoom",
+          "title":"salon virtual",
+          "typeIcon": "board",
+          "link": "#"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+
+/*********************************  AMBIENTE 1 ***************************/
+.editsCss1{
+    background-color : rgba(0,0,0,0);
+    color:black;
+    height:1px;    
+}
+
+.editorCss1{
+    background-color : rgba(0,0,0,0);
+    border-color:rgba(100,100,100,0.7);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+    border-radius: 0;
+    outline:none;
+    font-family:verdana;
+    font-weight:bold;
+    font-size:10px;
+}
+
+.editorCss1:hover{
+    border-color: darkblue;
+}
+
+.editCaptionCss1{
+    font-family: aharoni;
+    font-size: 12px;
+    color:black;
+    font-weight:bold;
+}
+
+/*********************************  AMBIENTE 2 ***************************/
+
+.editsCss2{
+    background-color : rgba(0,0,0,0);
+    color:black;
+    height:1px;
+}
+
+.editorCss2{
+    background-color : rgba(0,0,0,0);
+    border-color:rgba(100,100,100,0.5);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+    border-radius: 0;
+    outline:none;
+    font-family:verdana;
+    font-weight:bold;
+    font-size:12px;	
+}
+
+.editorCss2:hover{
+    border-color: #89001B;
+}
+
+.editCaptionCss2{
+    font-family:aharoni;
+    font-size: 12px;
+    color:black;
+    font-weight:bold;

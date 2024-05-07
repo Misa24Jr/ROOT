@@ -1,0 +1,106 @@
+html{
+    height: 100%;
+}
+body{
+	overscroll-behavior: none;
+	background-image: url('../images/fondoLogin.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    min-width: 150px;
+    width: 80%;
+    max-width: 280px;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.login-image-container{
+    width: 50px;
+    height: 20px;
+    margin: 0px 0;
+    border-radius: 50%;
+    /*background-color: turquoise;*/
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.login-image{
+    width: 55%;
+}
+
+.login-input{
+    width: 80%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    height: 35px;
+    padding: 10px;
+    outline: none;   
+    border-radius: 50px;
+    border: solid 1px #757575;
+    font-family:aharoni;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+.login-input:last-of-type{
+    margin-top: 10px;
+    font-family:aharoni;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+.login-input::placeholder{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #224447;
+}
+
+.login > button{
+    width: 50%;
+    padding: 5px;
+    margin: 2px 0;
+    cursor: pointer;    
+}
+
+.login-recover-password{
+    background-color: transparent;
+    color: #224447;
+    border:none;
+    font-family:aharoni;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.login-submit{
+    background-color: rgb(70, 119, 161);    
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: aharoni;
+    height: 40px
+    
+}
+
+.login-admision{
+    background-color: transparent;
+    color: #224447;
+    border:none;
+    font-size:9px;
+    font-family:aharoni;
+    font-weight:bold;
+}

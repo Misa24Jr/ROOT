@@ -1,0 +1,45 @@
+/*************************** AMBIENTE 1 *************************/
+.memoCss1{
+    background-color: rgba(255,255,255,1);
+    color:black;
+    border-width:thin;
+    border-color:rgba(100,100,100,0.5);
+    outline:none;
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.memoCss1:hover{
+    border-color:darkblue;
+}
+
+.memoCaptionCss1{
+    color: black;
+    font-family: verdana;
+    font-size:10px;
+    font-weight:bold;
+}
+/*************************** AMBIENTE 2 *************************/
+.memoCss2{
+    background-color: rgba(255,255,255,1);
+    color:black;
+    border-width:thin;
+    border-color:rgba(100,100,100,0.5);
+    outline:none;
+    font-family: aharoni;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.memoCss2:hover{
+    border-color:#89001B;
+}
+
+.memoCaptionCss2{
+    color: black;
+    font-family: aharoni;
+    font-size:12px;
+    font-weight:bold;
+}
+/*****************************************************************/

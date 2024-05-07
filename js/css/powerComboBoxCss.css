@@ -1,0 +1,125 @@
+/******************************************* AMBIENTE 1 *******************************************/
+.powerComboBoxCss1{
+    background-color:rgba(0,0,0,0);
+}
+
+.powerComboBoxPanelOptionCss1{
+    background-color: white;
+    color: black;
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.powerComboBoxPanelOptionCss1:hover{
+    background-color: rgba(10,50,80,1);
+    color: white;
+}
+
+.powerComboBoxPanelImgCss1{
+    width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 8px solid black;
+	border-bottom:1px;
+}
+
+.powerComboBoxPanelImgCss1:hover{
+    width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 8px solid #194e8a;
+	border-bottom:1px;
+}
+
+.powerComboBoxEditorCss1{
+    background-color : rgba(0,0,0,0);
+    border-color:rgba(100,100,100,0.7);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+    border-radius: 0;
+    outline:none;
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.powerComboBoxCaptionCss1{
+    color : black;
+    font-family:verdana;
+    font-weight:bold;
+    font-size:10px;
+}
+
+.powerComboBoxEditorCss1:hover{
+    border-color : #194e8a;
+}
+
+/******************************************* AMBIENTE 2 *******************************************/
+.powerComboBoxCss2{
+    background-color:rgba(0,0,0,0);
+}
+
+.powerComboBoxPanelOptionCss2{
+    background-color: white;
+    color: black;
+    font-family: aharoni;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.powerComboBoxPanelOptionCss2:hover{
+    background-color: rgba(10,50,80,1);
+    color: white;
+}
+
+.powerComboBoxPanelImgCss2{
+    width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 8px solid black;
+	border-bottom:1px;
+}
+
+.powerComboBoxPanelImgCss2:hover{
+    width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 8px solid #194e8a;
+	border-bottom:1px;
+}
+
+.powerComboBoxEditorCss2{
+    background-color : rgba(0,0,0,0);
+    border-color:rgba(100,100,100,0.5);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+    border-radius: 0;
+    outline:none;
+    font-family: aharoni;
+    font-size: 12px;
+    font-weight: normal;
+    color: black;
+}
+
+.powerComboBoxCaptionCss2{
+    color : black;
+    font-family:aharoni;
+    font-weight:bold;
+    font-size:12px;
+}
+
+.powerComboBoxEditorCss2:hover{
+    border-color : #89001B;
+}
+/**************************************************************************************************/
+

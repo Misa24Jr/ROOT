@@ -1,0 +1,53 @@
+/*********************************  AMBIENTE 1 ***************************/
+.calendarsCss1{
+    background-color : rgba(0,0,0,0);
+    border-color:rgba(100,100,100,0.7);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+    border-radius: 0;
+    outline:none;
+    font-family: verdana;
+    font-size: 11px;
+    font-weight: bold;
+    color:black;
+}
+
+.calendarsCss1:hover{
+    border-color: darkblue;
+}
+
+.calendarsCaptionCss1{
+    font-family: verdana;
+    font-size: 09px;
+    font-weight: bold;
+    color:black;
+}
+
+/*********************************  AMBIENTE 2 ***************************/
+.calendarsCss2{
+    background-color : rgba(0,0,0,0);
+    border-color:rgba(100,100,100,0.7);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-width:1px;
+    border-radius: 0;
+    outline:none;
+    font-family: verdana;
+    font-size: 11px;
+    font-weight: bold;
+    color:black;
+}
+
+.calendarsCss2:hover{
+    border-color: #89001B;
+}
+
+.calendarsCaptionCss2{
+    font-family: verdana;
+    font-size: 09px;
+    font-weight: bold;
+    color:black;
+}
