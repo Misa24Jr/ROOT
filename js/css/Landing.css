@@ -30,6 +30,119 @@
   text-align: center;
   color: var(--text-dark);
 }
+.btnDomus a {
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.btnDomus {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--secondary-color);
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid var(--secondary-color);
+}
+
+.btnDomus:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid var(--primary-color);
+  box-shadow: 4px 5px 17px -4px var(--secondary-color);
+}
+
+.btnDomus::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--secondary-color);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.btnDomus:hover::before {
+  width: 250%;
+}
+.link-download {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.link-download:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.link-download:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.link-download:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #330aba;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.link-download:hover {
+  color: #ffffff;
+  border: 1px solid #330aba;
+}
+
+.link-download:hover:before {
+  top: -35%;
+  background-color: #330aba;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.link-download:hover:after {
+  top: -45%;
+  background-color: #330aba;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
 
 .section__subheader {
   position: relative;
@@ -277,6 +390,7 @@ nav {
   font-weight: 700;
   font-family: var(--header-font);
   color: var(--text-dark);
+  padding-bottom: 10px;
 }
 
 .projects__card p {
