@@ -1,86 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="ISO-8859-1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="images_portal/insiemp.ico">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script language="JavaScript" type="text/javascript" src="js/com/LoadCss.js"></script>
-    <script src="js_portal/com/Flexivity.js"></script>
-    <script src="js_portal/app/portal/bodyConfig.js"></script>
-    <script src="js_portal/app/portal/noticias.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./js/css/Landing.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>EDUC@</title>
   </head>
-
   <body>
+    <header class="header" id="home">
+      <nav>
+        <div class="nav__logo"><a href="#">INSIEMPca</a></div>
+        <div class="menu-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+        <ul class="nav__links">
+          <li class="link"><a href="#home">Inicio</a></li>
+          <li class="link"><a href="#services">Servicios</a></li>
+          <li class="link"><a href="#projects">Portfolio</a></li>
+          <li class="link"><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1>INTERNACIONAL DE SISTEMAS EMPRESARIALES COMPUTACION Y ANALISIS, C.A.</h1>
+          <button class="btn">Siguenos!</button>
+          <a href="#">insiemp@hotmail.com</a>
+        </div>
+        <div class="header__image">
+          <img
+            id="carouselImage"
+            class="fadeInDown"
+            src=""
+            alt="header profile"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container services__container" id="services">
+      <p class="section__subheader">QUÉ HACEMOS</p>
+      <h2 class="section__header">Servicios</h2>
+      <div class="services__grid">
+        <div class="services__card">
+          <img src="./images_portal/assets/service-1.png" alt="service" />
+          <h4>Tu Pagina Web</h4>
+          <p>
+            Cuenta con un subdominio web otorgado por la empresa para publicar
+            tu propia y particularizada pagina web y sistema, la cual llevara
+            toda su información institucional y cuyo soporte y mantenimiento
+            será por parte del personal Insiemp.
+          </p>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="services__card">
+          <img src="./images_portal/assets/service-2.png" alt="service" />
+          <h4>Plataforma Educ@ PREMIUM</h4>
+          <p>
+            Incluye todos sus módulos: Seguridad, Control de Estudio, Control de
+            Pago, Planificación, Comunicación, Estudiante; durante todo el
+            periodo escolar, una vez configurado el servicio Educa en la
+            institución, se realizaran inducción de todos sus módulos en forma
+            personalizada por área y departamento; Control de Estudio,
+            Administración, Docente de Inicial, Primaria y Bachillerato, asi
+            como personal que la institución decida de acuerdo a sus
+            necesidades.
+          </p>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="services__card">
+          <img src="./images_portal/assets/service-3.png" alt="service" />
+          <h4>Imprenta A Color</h4>
+          <ul>
+            <li>
+              > Cuentas con el documento físico de Boletines(uno por lapso y por
+              alumno) de Inicial, Primaria y Bachillerato.
+            </li>
+            <li>> Constancia de promoción de cambio de nivel académico.</li>
+            <li>> Carta de Conducta.</li>
+            <li>> Constancia de Art. 13.</li>
+            <li>> Notas certificadas de egresados.</li>
+            <li>> Lista de sección por cada lapso</li>
+            <li>> Imprenta de Título de Bachiller</li>
+            <li>> Compendios de resumen final</li>
+          </ul>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="services__card">
+          <img src="./images_portal/assets/service-4.png" alt="service" />
+          <h4>Entrega A Domicilio</h4>
+          <p>
+            Toda la imprenta es entregada por nuestro personal en tu propia
+            institución(una vez por periodo académico) con previa y mutua
+            planificación.
+          </p>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="services__card">
+          <img src="./images_portal/assets/service-5.png" alt="service" />
+          <h4>Actualizaciones</h4>
+          <p>
+            Todas las actualizaciones que se requieran durante el periodo
+            escolar contratado, exigido por el MPPE sin que eso cause costo
+            adicional. También incluye actualizaciones sobre nuevas opciones y
+            mejoras en los modulos que la empresa considere conveniente.
+          </p>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="services__card">
+          <img src="./images_portal/assets/service-6.png" alt="service" />
+          <h4>Unica Base De Datos</h4>
+          <p>
+            Cuentas con un repositorio de datos en la nube bajo de
+            control(podras incluir, modificar y borrar), que integrar todos los
+            módulos de forma unica. Esto garantiza consolidación y unificación
+            de todos tus datos desde Control de Estudio(Labor Academica) hasta
+            Control de Pagos(Labor Administrativa) y Comunicación(Envio de
+            mensajes via Correo y/o texto), ejemplo: notificar al representante
+            pagos vencidos, procesos evaluativos, información institucional a
+            todos los estudiantes.
+          </p>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects__container" id="projects">
+      <p class="section__subheader">SOPORTE</p>
+      <h2 class="section__header">Manuales</h2>
+
+      <div class="projects__grid">
+        <div class="projects__card">
+          <img src="./images_portal/manual/manual_representante.png" alt="project" />
+          <h4>Como ingresar al sistema</h4>
+          <p>Descargar</p>
+        </div>
+
+        <div class="projects__card">
+          <img src="./images_portal/manual/transferencia_representante.png" alt="project" />
+          <h4>Registrar transferencia del representantes</h4>
+          <p>Descargar</p>
+        </div>
+
+        <div class="projects__card">
+          <img src="./images_portal/manual/visualizapdf.png" alt="project" />
+          <h4>Visualizar documento PDF en Google Chrome</h4>
+          <p>Descargar</p>
+        </div>
+
+        <div class="projects__card">
+          <img src="./images_portal/manual/ventanaemergente.png" alt="project" />
+          <h4>Permitir ventanas emergentes en tu navegador</h4>
+          <p>Decargar</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="section__container banner__container">
+        <h2 class="section__header">¿Quienes Somos?</h2>
+        <div class="banner__content">
+          <p>
+            Somos una empresa de Software, ubicada en la ciudad de Maracaibo del
+            estado Zulia, fundada en el año 2015. Comprometida en solucionar las
+            necesidades de nuestros clientes mediante Servicios de Consultoría,
+            Soporte, Capacitación, Desarrollo e Implementación de Software con
+            una política de vanguardia e innovación tecnológica dándole valor
+            agregado a su gestión empresarial. INSIEMP, tiene como objeto
+            principal la investigación, implementación y desarrollo de
+            tecnologías en empresas comerciales y de servicio, así como la
+            prestación de servicio relacionado con la oferta y distribución de
+            cualquier tipo de productos por vía informática, incluyendo su
+            fabricación, venta y distribución de software, hardware y accesorios
+            de cualquier clase, la fabricación, compra, venta, importación,
+            exportación y distribución de equipos electrónicos y de T.I. en
+            general, además los servicios relacionados con el entrenamiento de
+            personal para la certificación de uso de software y hardware en
+            general, la prestación de servicio, relacionado con la
+            automatización de procesos e integración de sistemas, servicio
+            relacionado con la impresión de data variable y formatos
+            empresariales tanto en empresas públicas como privadas, así como la
+            prestación de servicios WEB para la planificación, gestión y control
+            en las instituciones educativas.
+          </p>
+          <h4>Maracaibo</h4>
+          <h5>Venezuela</h5>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h2>INSIEMPca</h2>
+          <p>insiemp@hotmail.com</p>
+          <p>+58(414)687-6440 / +58(424)6537247</p>
+          <p>J-50445261-0</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__socials">
+            <a href="https://www.facebook.com/EducaDeInsiemp"><i class="ri-facebook-fill"></i></a>
+            <a href="https://twitter.com/insiemp"><i class="ri-twitter-fill"></i></a>
+            <a href="https://www.instagram.com/insiemp_ca/"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Sigue Explorando</h4>
+          <a href="#home">Inicio</a>
+          <a href="#services">Servicios</a>
+          <a href="#projects">Portfolio</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/com/main.js"></script>
     <script>
-      flex.init = () => {
-        const {NavBar, Hero, Footer, Slider, Card} = flex;
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = [
+          // "./images_portal/assets/index-1.png",
+          // "./images_portal/assets/index-2.png",
+        ];
+        const intervalTime = 5000;
 
-        const navBar = new NavBar(navBarConfig);
-        const documentContainers = new Document();
-        const footer = new Footer(footerConfig);
-        const hero = new Hero({
-          id: 'hero',
-          idxElement: 0,
-          title: '',
-          subTitle: '',
-          imgSrc : 'images/logo/bienvenido.jpg'
-        });
-        const slider = new Slider({
-          id: 'slider',
-          idxElement: 0,
-          _built: () => {
-            slider.setDimension('100vw', '88vh');
-            slider.createSlider(sliderConfig);
-          }
-        });
-        const contactsConfig = footerConfig;
-        contactsConfig.id = 'contact'; 
-        const contacts = new Footer(contactsConfig);
-        const closeContacts = new flex.ControlButton({
-          id: 'closecontact',
-          idxElement: 0,
-          backgroundColor1: 'white',
-          cssClass:{
-            position: 'absolute',
-            top: '10px'
-          },
-          typeButton: 'close',
-          hint: 'cerrar'
-        });
+        let index = 0;
+        const imageElement = document.getElementById("carouselImage");
 
-        footer._allBuilt = () => {
-				  navBar.setActualSection('inicio');
-          contacts.getPanel().style.backgroundColor = 'rgba(0,0,0,0.8)';
-          closeContacts.setPosition('95%')
-          navBar.getSection('contactos').addEventListener('click',e=>{
-            if(contacts.getPanel().getBoundingClientRect().top === innerHeight - contacts.getPanel().getBoundingClientRect().height){
-              closeContacts.getPanel().click();
-            } else{
-              contacts.getPanel().style.display = 'block';
-              contacts.getPanel().style.top = innerHeight +'px';
-              contacts.getPanel().style.transition = 'top ease-in 0.3s';
-              contacts.getPanel().style.top = innerHeight - contacts.getPanel().getBoundingClientRect().height +'px';
-            }
-          });
-          closeContacts.onClick(()=>{
-            contacts.getPanel().style.top = innerHeight + 'px';
-          });
-          contacts.getPanel().addEventListener('transitionend',e=>{
-            if(contacts.getPanel().getBoundingClientRect().top == innerHeight - contacts.getPanel().getBoundingClientRect().height) console.log(e);
-          });
-          contacts.getPanel().style.position = 'fixed';
-          contacts.getPanel().appendChild(closeContacts.getPanel());          
-          navBar.addToBody();          
-          slider.addToBody();                    
-          hero.addToBody();
-          footer.addToBody();
-          contacts.addToBody();
+        function changeImage() {
+          index = (index + 1) % images.length;
+          imageElement.src = images[index];
+          imageElement.classList.remove("fadeInDown");
+          void imageElement.offsetWidth;
+          imageElement.classList.add("fadeInDown");
         }
-      }
+
+        setInterval(changeImage, intervalTime);
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav__links');
+
+      menuToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+        menuToggle.querySelector('i').classList.toggle('ri-menu-line');
+        menuToggle.querySelector('i').classList.toggle('ri-close-line');
+      });
+    });
     </script>
   </body>
-
 </html>
