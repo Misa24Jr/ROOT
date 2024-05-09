@@ -1,13 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<html lang="en">
     <head>
+		
+		<meta charset="UTF-8" />
 		<title>EDUC@</title>
 		<link rel="shortcut icon" href="images/insiemp.ico"/>
 		<link rel="stylesheet" href="css/Login.css">
-
-    		<meta charset="ISO-8859-1">
-    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<meta http-equiv="Cache-Control" content="no-cache">
 		<meta http-equiv="Cache-Control" content="no-store">
@@ -131,7 +130,7 @@
 		<script language="JavaScript" type="text/javascript" src="js/edu/seg/MantReiClave.js"></script>
 		<script language="JavaScript" type="text/javascript" src="js/edu/seg/Property.js"></script>
 		<script language="JavaScript" type="text/javascript" src="js/edu/seg/CtxOrg.js"></script>
-    		<script language="JavaScript" type="text/javascript" src="js/edu/seg/Login.js"></script>
+    	<script language="JavaScript" type="text/javascript" src="js/edu/seg/Login.js"></script>
     </head>
     <body>
 	    <script>
@@ -188,11 +187,14 @@
 
 		const login = new Login({
 		    userLabel : 'Usuario',
-		    passwordLabel: 'Clave',
-		    imgSrc: 'images/candadoLogin.jpeg',
-		    recoverPasswordLabel:'¿Olvido su Clave?',
-		    submitLabel: 'Ingresar',
-		    admisionLabel:'',		    
+		    passwordLabel: 'ContraseÃ±a',
+		    imgSrc: './images_portal/assets/log.svg', //Imagen de represnetacion
+		    submitLabel: 'Ingresar',	
+			title: 'Login',
+			title2: 'Domus', 
+			text: 'Sistema Web',
+			
+
 		    onClickRecoverPassword:()=>{
 		    	recuperar();
 		    },

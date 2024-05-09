@@ -1,86 +1,138 @@
-const Login = class{
-    constructor(options){
-        this.options = options;
-        this.container = document.createElement('div');
-        this.imageContainer = document.createElement('div');
-        this.image = document.createElement('img');
-        this.user = document.createElement('input');
-        this.password = document.createElement('input');
-//        this.guess = document.createElement('input');
-        this.recoverPassword = document.createElement('button');
-        this.admision = document.createElement('button');
-        this.submit = document.createElement('button');
-        
-        this.image.src = options.imgSrc;
-//        this.user.type= this.guess.type = 'text';
-        this.password.type = 'password';
-        this.user.placeholder = options.userLabel;
-        this.password.placeholder = options.passwordLabel;
-//        this.guess.placeholder = options.guessLabel;
-        this.recoverPassword.innerText = options.recoverPasswordLabel;
-        this.admision.innerText = options.admisionLabel;
-        this.submit.innerText = options.submitLabel;
-        
-        this.container.className = 'login';
-        this.image.className = 'login-image';
-        this.user.className = 'login-input';
-        this.password.className = 'login-input';
-//        this.guess.className = 'login-input';
-        this.recoverPassword.className = 'login-recover-password';
-        this.admision.className = 'login-admision';
-        this.submit.className = 'login-submit';
-        this.imageContainer.className = 'login-image-container';
+const Login = class {
+  constructor(options) {
+    this.options = options;
+    // Contenedor general
+    this.container = document.createElement("div");
 
-        this.container.appendChild(this.imageContainer);
-        this.imageContainer.appendChild(this.image);
-        this.container.appendChild(this.user);
-        this.container.appendChild(this.password);
-//        this.container.appendChild(this.guess);
-        this.container.appendChild(this.recoverPassword);
-        this.container.appendChild(this.submit);
-        this.container.appendChild(this.admision);
+    // SubContenedores
+    this.formsContainer = document.createElement("div");
+    // Formulario de login
+    this.singIn = document.createElement("div");
+    this.signInForm = document.createElement("form");
+    // item dentro del formulario
+    this.title = document.createElement("h2");
+    // Contenedor de los inputs
+    this.inputFieldUser = document.createElement("div");
+    this.inputFieldPassword = document.createElement("div");
+    // Inputs
+    this.user = document.createElement("input");
+    this.password = document.createElement("input");
+    // Boton de Login
+    this.submit = document.createElement("button");
 
-        this.events();
-    }    
+    this.panelsConatiner = document.createElement("div");
+    this.panelLeftPanel = document.createElement("div");
+    // SubContenedores
+    this.content = document.createElement("div");
+    // item dentro del contenedor
+    this.title2 = document.createElement("h3");
+    this.text = document.createElement("p");
+    this.image = document.createElement("img");
 
-    addToBody(){
-        document.body.appendChild(this.container);
-    }
+    this.recoverPassword = document.createElement("button");
+    this.admision = document.createElement("button");
 
-    events(){
-	this.user.addEventListener('keyup',(e)=>{
-	    if(e.keyCode === 13) this.password.focus();
-	});
-		
-	this.password.addEventListener('keyup',(e)=>{
-	    if(e.keyCode === 13) this.submit.click();
-	});
-        this.admision.addEventListener('click', ()=>{
-            if(this.options.onClickAdmision)this.options.onClickAdmision();
-        });
+    // Agregandole su contenido
+    this.image.src = options.imgSrc;
+    this.password.type = "password";
+    this.user.placeholder = options.userLabel;
+    this.password.placeholder = options.passwordLabel;
+    this.title.innerText = options.title;
+    this.title2.innerText = options.title2;
+    this.text.innerText = options.text;
+    this.recoverPassword.innerText = options.recoverPasswordLabel;
+    this.admision.innerText = options.admisionLabel;
+    this.submit.innerText = options.submitLabel;
 
-        this.recoverPassword.addEventListener('click', ()=>{
-            if(this.options.onClickRecoverPassword)this.options.onClickRecoverPassword();
-        });
+    // Agregando clases
+    this.container.className = "container";
+    this.formsContainer.className = "forms-container";
+    this.panelsConatiner.className = "panels-container";
+    this.singIn.className = "signin-signup";
+    this.signInForm.className = "sign-in-form";
+    this.title.className = "title";
+    this.inputFieldUser.className = "input-field";
+    this.inputFieldPassword.className = "input-field";
+    this.submit.className = "btn solid";
+    this.user.className = "input";
+    this.password.className = "input";
+    this.panelsConatiner.className = "panels-container";
+    this.panelLeftPanel.className = "panel left-panel";
+    this.content.className = "content";
+    this.image.className = "image";
 
-        this.submit.addEventListener('click', ()=>{
-            if(this.options.onClickSubmit)this.options.onClickSubmit();
-        });
-    }
+    // Agregando donde va cada quien
 
-    onClickAdmision(extFunct){this.options.onClickAdmision = extFunct;}
-    onClickRecoverPassword(extFunct){this.options.onClickRecoverPassword = extFunct;}
-    onClickSubmit(extFunct){this.options.onClickSubmit = extFunct;}
+    this.container.appendChild(this.formsContainer);
 
-    getUser(){
-        return this.user.value;
-    }
-    
-    getPassword(){
-        return this.password.value;
-    }
+    this.formsContainer.appendChild(this.singIn);
+    this.singIn.appendChild(this.signInForm);
+    this.signInForm.appendChild(this.title);
+    this.signInForm.appendChild(this.inputFieldUser);
+    // this.inputFieldUser.appendChild(this.user);
+    this.inputFieldUser.appendChild(this.user);
+    this.signInForm.appendChild(this.inputFieldPassword);
+    // this.inputFieldPassword.appendChild(this.password);
+    this.inputFieldPassword.appendChild(this.password);
+    this.signInForm.appendChild(this.submit);
 
-//    getGuess(){
-//        return this.guess.value;
-//    }
-}
+    this.container.appendChild(this.panelsConatiner);
+    this.panelsConatiner.appendChild(this.panelLeftPanel);
+    this.panelLeftPanel.appendChild(this.content);
+    this.panelLeftPanel.appendChild(this.image);
+    this.content.appendChild(this.title2);
+    this.content.appendChild(this.text);
+
+    this.events();
+  }
+
+  addToBody() {
+    document.body.appendChild(this.container);
+  }
+
+  events() {
+    this.user.addEventListener("keyup", (e) => {
+      if (e.keyCode === 13) this.password.focus();
+    });
+
+    this.password.addEventListener("keyup", (e) => {
+      if (e.keyCode === 13) this.submit.click();
+    });
+    this.admision.addEventListener("click", () => {
+      if (this.options.onClickAdmision) this.options.onClickAdmision();
+    });
+
+    this.recoverPassword.addEventListener("click", () => {
+      if (this.options.onClickRecoverPassword)
+        this.options.onClickRecoverPassword();
+    });
+
+    this.submit.addEventListener("click", () => {
+      if (this.options.onClickSubmit) this.options.onClickSubmit();
+    });
+  }
+
+  onClickAdmision(extFunct) {
+    this.options.onClickAdmision = extFunct;
+  }
+  onClickRecoverPassword(extFunct) {
+    this.options.onClickRecoverPassword = extFunct;
+  }
+  onClickSubmit(extFunct) {
+    this.options.onClickSubmit = extFunct;
+  }
+
+  getUser() {
+    console.log(this.user.value);
+    return this.user.value;
+  }
+
+  getPassword() {
+    console.log(this.password.value);
+    return this.password.value;
+  }
+
+  //    getGuess(){
+  //        return this.guess.value;
+  //    }
+};

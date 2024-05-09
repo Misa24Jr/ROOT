@@ -1,7 +1,7 @@
 /******************************* AMBIENTE 1 ********************************/
 .imgButtonsCss1{
     border: 0px;
-    background-color: rgb(70, 119, 161);
+    background-color: red(70, 119, 161);
     color: black;
     width: 120px;
     height:30px;
