@@ -21,7 +21,7 @@
         <ul class="nav__links">
           <li class="link"><a href="#home">Inicio</a></li>
           <li class="link"><a href="#services">Servicios</a></li>
-          <li class="link"><a href="#projects">Portfolio</a></li>
+          <li class="link"><a href="#projects">Calendario / Soporte</a></li>
           <li class="link"><a href="#contact">Contacto</a></li>
           <li class="btnDomus"><a href="login">Domus</a></li>
         </ul>
@@ -30,13 +30,13 @@
         <div class="header__content">
           <h1>INTERNACIONAL DE SISTEMAS EMPRESARIALES COMPUTO Y ANALISIS, C.A.</h1>
           <button class="btn">Siguenos!</button>
-          <a href="#">insiempca@gmail.com</a>
+          <a href="https://www.instagram.com/insiemp_ca/">insiemp_ca</a>
         </div>
         <div class="header__image">
           <img
             id="carouselImage"
             class="fadeInDown"
-            src="./images_portal/assets/index-1.png"
+            src="./images/slider/imagen_1.jpg"
             alt="header profile"
           />
         </div>
@@ -132,10 +132,17 @@
     </section>
 
     <section class="projects__container" id="projects">
-      <p class="section__subheader">SOPORTE</p>
-      <h2 class="section__header">Manuales</h2>
+      <p class="section__subheader">CALENDARIO</p>
+      <h2 class="section__header">Soporte</h2>
     
       <div class="projects__grid">
+
+        <div class="projects__card">
+          <img src="./help/calendario_portal.jpg" alt="project" />
+          <h4>Calendario</h4>
+          <a class="link-download" href="./help/calendario_insiemp.pdf" download>Descargar</a>
+        </div>
+
         <div class="projects__card">
           <img src="./images_portal/manual/manual_representante.png" alt="project" />
           <h4>Como ingresar al sistema</h4>
@@ -215,7 +222,7 @@
           <h4>Sigue Explorando</h4>
           <a href="#home">Inicio</a>
           <a href="#services">Servicios</a>
-          <a href="#projects">Portfolio</a>
+          <a href="#projects">Calendario / Soporte</a>
         </div>
       </div>
     </footer>
@@ -223,8 +230,18 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const images = [
-          "./images_portal/assets/index-1.png",
-          "./images_portal/assets/Index-2.png",
+          "./images/slider/imagen_1.jpg",
+          "./images/slider/imagen_2.jpg",
+          "./images/slider/imagen_3.jpg",
+          "./images/slider/imagen_4.jpg",
+          "./images/slider/imagen_5.jpg",
+          "./images/slider/imagen_6.jpg",
+          "./images/slider/imagen_7.jpg",
+          "./images/slider/imagen_8.jpg",
+          "./images/slider/imagen_9.jpg",
+          "./images/slider/imagen_10.jpg",
+          "./images/slider/imagen_11.jpg",
+          "./images/slider/imagen_12.jpg"
         ];
         const intervalTime = 5000;
 
@@ -250,6 +267,17 @@
         navLinks.classList.toggle('active');
         menuToggle.querySelector('i').classList.toggle('ri-menu-line');
         menuToggle.querySelector('i').classList.toggle('ri-close-line');
+      });
+
+      // Select all links within the navigation
+      const navLinkItems = document.querySelectorAll('.nav__links a');
+
+      navLinkItems.forEach(link => {
+        link.addEventListener('click', function () {
+          navLinks.classList.remove('active');
+          menuToggle.querySelector('i').classList.remove('ri-close-line');
+          menuToggle.querySelector('i').classList.add('ri-menu-line');
+        });
       });
     });
     </script>
