@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<title>EDUC@</title>
 		<link rel="shortcut icon" href="images/insiemp.ico"/>
-		<link rel="stylesheet" href="css/Login.css">
+		<link rel="stylesheet" href="/js/css/Login.css">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<meta http-equiv="Cache-Control" content="no-cache">
@@ -188,7 +188,7 @@
 		const login = new Login({
 		    userLabel : 'Usuario',
 		    passwordLabel: 'Contraseña',
-		    imgSrc: './images_portal/assets/log.svg', //Imagen de represnetacion
+		    imgSrc: '', //Imagen de represnetacion
 		    submitLabel: 'Ingresar',	
 			title: 'Login',
 			title2: 'Domus', 
